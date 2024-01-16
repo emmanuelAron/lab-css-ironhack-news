@@ -178,10 +178,9 @@ header {
 }
   
 /* Write your CSS below */
-
-
 @media screen and (max-width: 760px) {
   /* CSS rules */
+  /* Iteration 1  */
   .navbar {
     justify-content: space-evenly;
     flex-direction: column;
@@ -191,11 +190,39 @@ header {
   }
   .main-article{
    /* width: 90%; */
-   width: 300px;
+    width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
   }
   .main{
     max-width:300px;
   }
+  .navbar li{
+    width:100%;
+    border: 0.05px solid white;
+  }
+  .main-article .image {
+  width:250px;
+ }
+ .content p{
+  width:250px;
+ }
+ .article{
+  width:300px;
+ }
+  /* Iteration 2  */
+  @media (min-width: 760px) and (max-width: 1024px) {
+    /* Not working?  */
+    .navbar{
+      justify-content: center;
+      align-items: center;
+    }
+    .articles-container{
+      display: flex;
+      flex-wrap:wrap;
+    }
+  }
+
 }
