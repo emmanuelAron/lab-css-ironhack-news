@@ -81,6 +81,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  
 }
 
 .navbar li {
@@ -177,3 +178,24 @@ header {
 }
   
 /* Write your CSS below */
+
+
+@media screen and (max-width: 760px) {
+  /* CSS rules */
+  .navbar {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .articles-container{
+    flex-direction: column;
+  }
+  .main-article{
+   /* width: 90%; */
+   width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .main{
+    max-width:300px;
+  }
+}
